@@ -1,14 +1,223 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html,
+body {
+  height: 100%;
+}
+
+.mainBox {
+  width: 63%;
+  height: 100%;
+  position: absolute;
+  left: 37%;
+  margin: 0;
+  padding: 0;
+  background-color: #f18d03;
+  z-index: 2;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.mainBoxBg {
+  width: 67% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  opacity: 0.05;
+  position: fixed;
+  z-index: -21;
+  overflow: hidden;
+}
+
+/* .signInBox {
+  width: 37%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 63%;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1e22;
+  color: #fff;
+  z-index: 0;
+} */
+
+.signUpBox {
+  width: 37%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: #1d1e22;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.boxContainer {
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.singleSignUpBox {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1e22;
+  color: #fff;
+  z-index: 3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff !important;
+}
+
+.mainBox h1 {
+  font-size: 5rem !important;
+}
+
+.mainBoxContainer {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mainBoxText {
+  display: flexbox;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 10%;
+  display: block;
+}
+
+a {
+  color: #fff !important;
+}
+
+.input {
+  /* margin-bottom: 1rem; */
+  height: 3.25rem;
+  border: 1px solid #2b2c30;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  padding-left: 0.6rem;
+  background-color: #1d1e22 !important;
+}
+
+.singleSignUpBox .input {
+  /* margin-bottom: 1rem; */
+  height: 2.75rem;
+  border: 1px solid #2b2c30;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  padding-left: 0.6rem;
+  background-color: #1d1e22 !important;
+}
+
+.input input {
+  color: #fff !important;
+}
+
+.input .icon {
+  margin-left: 0.6rem !important;
+}
+
+.signUpButton {
+  height: 4rem;
+  background-color: #f18d03 !important;
+  color: #fff !important;
+}
+
+.description {
+  text-align: left !important;
+  color: #8d8e8e;
+}
+
+.elips {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: #f89f23;
+  border-radius: 50%;
+  opacity: 0.71;
+  z-index: -1;
+}
+
+.elips1 {
+  left: 1rem;
+  top: -54px;
+}
+
+.elips2 {
+  left: 534px;
+  top: 125px;
+}
+
+.elips3 {
+  left: 588px;
+  top: 194px;
+}
+
+.elips4 {
+  left: 39px;
+  top: 269px;
+}
+
+.elips5 {
+  left: 129px;
+  top: 336px;
+}
+
+.elips6 {
+  left: 600px;
+  top: 489px;
+}
+
+.elips7 {
+  left: 690px;
+  top: 558px;
+}
+
+.elips8 {
+  left: 0;
+  top: 668px;
+}
+
+#root {
+  height: 100% !important;
+}
+
+.returnToLogin {
+  background-color: none;
+  border: none;
+  color: #8d8e8e !important;
+  border-bottom: 3px solid #f18d03;
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 7px;
 }
